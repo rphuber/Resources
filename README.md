@@ -5,6 +5,15 @@
 - nano <filename> => opens nano (terminal's text editor) and creates/edits file in console
 - You can put universal Rails configuration options in `~.railsrc`.  I have `--skip-test-unit` (since I use RSpec) and `-d postgresql` (though you can also do `-d mysql2`).
 
+### Git
+- Free but ugly help with merges:  http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/
+- Expensive but pretty help with merges: http://www.kaleidoscopeapp.com/
+- Speed up integration of other people's changes
+  - Pull up ~/.zshrc
+  - Add the following command: `alias fetchp='git fetch upstream && git pull upstream master && bundle install && rake db:migrate'`
+  - (Start a new tab for the alias to take effect.)
+  - Then, everytime you type `$ fetchp`, it will fetch from upgream, pull upstream/master, bundle install, and migrate all at once.
+
 ### Sublime text
 - command-u => soft undo (undo last action, ie click)
 
